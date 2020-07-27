@@ -164,7 +164,7 @@ content: "g v";
 }
 
 .player__control{
-  flex-grow: 2;
+  flex-grow: 3;
   text-align: center;
   background-color: grey;
 }
