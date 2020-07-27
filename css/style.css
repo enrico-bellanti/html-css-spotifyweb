@@ -39,13 +39,21 @@ main{
   height: calc(100% - 70px);
 }
 
+.nav_top{
+  height: 80px;
+}
+
 .nav_bottom{
-  height: 100%;
+  height: calc(100% - 80px);
+}
+
+.nav_bottom_text{
+  height: 50px;
 }
 
 .aside_list_playlist{
   overflow-y: auto;
-  height: 100%;
+  height: calc(100% - 50px);
 }
 
 .aside_bottom{
