@@ -40,7 +40,7 @@ main{
 }
 
 .nav_bottom{
-  height: calc(100% - 70px);
+  height: 100%;
 }
 
 .aside_list_playlist{
