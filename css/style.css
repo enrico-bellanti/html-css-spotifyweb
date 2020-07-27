@@ -68,8 +68,25 @@ main{
 /* sezione centrale */
 .main_section{
   width: calc(100% - 250px);
+  padding-top: 80px;
   overflow: auto;
   background-color: coral;
+}
+
+/* upgrade_bar */
+
+.upgrade_bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 250px);
+  height: 80px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* footer */
