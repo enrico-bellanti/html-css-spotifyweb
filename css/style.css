@@ -5,26 +5,25 @@
  }
 
 
+ /* generali */
+
+ a{
+   text-decoration: none;
+ }
+
+ ul{
+   list-style: none;
+ }
+
+
 .container{
   height: 100vh;
   background-color: blue;
 }
 
-/* generali */
 
-a{
-  text-decoration: none;
-}
 
-ul{
-  list-style: none;
-}
 
-main{
-  display: flex;
-  height: calc(100vh - 80px);
-  background-color: yellow;
-}
 
 /* barra laterale */
 
@@ -87,6 +86,20 @@ main{
   height: 80px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* MAIN */
+
+main{
+  display: flex;
+  height: calc(100vh - 80px);
+  background-color: yellow;
+}
+
+.main_top_menu{
+  display: flex;
+  justify-content: center;
+  background-color: blue;
 }
 
 /* footer */
