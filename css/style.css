@@ -1,0 +1,68 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+
+.container{
+  height: 100vh;
+  background-color: blue;
+}
+
+/* generali */
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+main{
+  display: flex;
+  height: calc(100vh - 80px);
+  background-color: yellow;
+}
+
+/* barra laterale */
+
+.side_bar{
+  position: relative;
+  overflow: hidden;
+  height: calc(100% - 70px);
+  width: 250px;
+  background-color: pink;
+}
+
+.nav_bottom{
+
+}
+
+.aside_list_playlist{
+  overflow-y: auto;
+}
+
+.aside_bottom{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+}
+
+/* sezione centrale */
+.main_section{
+  width: calc(100% - 250px);
+  overflow: auto;
+  background-color: coral;
+}
+
+/* footer */
+
+.player{
+  height: 80px;
+  background-color: green;
+}
