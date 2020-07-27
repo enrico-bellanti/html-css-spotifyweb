@@ -39,11 +39,8 @@ main{
   height: calc(100% - 70px);
 }
 
-.nav_top{
-  height: 30%;
-}
 .nav_bottom{
-  height: 70%;
+  height: calc(80% - 70px);
 }
 
 .aside_list_playlist{
