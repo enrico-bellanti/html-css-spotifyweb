@@ -104,9 +104,10 @@ main{
 
 .list_songs{
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .list_songs li{
-  width: calc((100% / 6) - 20px);
+  width: calc((100% / 2) - 20px);
   text-align: center;
 }
 
@@ -148,4 +149,32 @@ main{
 .player{
   height: 80px;
   background-color: green;
+}
+
+@media screen and (max-width: 767px){
+  .list_songs li{
+    width: calc((100% / 2) - 20px);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .list_songs li{
+    width: calc((100% / 2) - 20px);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .list_songs li{
+    width: calc((100% / 4) - 20px);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .list_songs li{
+    width: calc((100% / 6) - 20px);
+    text-align: center;
+  }
 }
