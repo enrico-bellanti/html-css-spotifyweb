@@ -15,14 +15,15 @@
    list-style: none;
  }
 
+ .list_inline{
+   display: flex;
+ }
+
 
 .container{
   height: 100vh;
   background-color: blue;
 }
-
-
-
 
 
 /* barra laterale */
@@ -100,6 +101,46 @@ main{
   display: flex;
   justify-content: center;
   background-color: blue;
+}
+
+.list_songs{
+  text-align: center;
+}
+
+.disc_img_wrapper{
+  position: relative;
+  height: 200px;
+  width: 200px;
+
+}
+.disc_img_wrapper img{
+  width: 100%;
+  height: auto;
+}
+.disc_img_wrapper .layout_disc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.disc_img_wrapper .layout_disc span::after{
+  display: none;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 70px;
+  color: #fff;
+}
+
+.disc_info_wrapper:hover span::after{
+  display: block;
 }
 
 /* footer */
