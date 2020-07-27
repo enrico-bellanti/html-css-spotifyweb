@@ -30,15 +30,25 @@ main{
 
 .side_bar{
   position: relative;
-  overflow: hidden;
   height: 100%;
   width: 250px;
   background-color: pink;
 }
+.nav_bar{
+  overflow: hidden;
+  height: calc(100% - 70px);
+}
+
+.nav_top{
+  height: 30%;
+}
+.nav_bottom{
+  height: 70%;
+}
 
 .aside_list_playlist{
   overflow-y: auto;
-  height: 400px;
+  height: 100%;
 }
 
 .aside_bottom{
