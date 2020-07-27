@@ -36,10 +36,6 @@ main{
   background-color: pink;
 }
 
-.nav_bar{
-  height: calc(100% - 70px);
-  background-color: purple;
-}
 .aside_list_playlist{
   overflow-y: auto;
   height: 400px;
@@ -49,7 +45,6 @@ main{
   position: absolute;
   left: 0;
   bottom: 0;
-  /* z-index: 1; */
   height: 70px;
   width: 100%;
   background-color: grey;
