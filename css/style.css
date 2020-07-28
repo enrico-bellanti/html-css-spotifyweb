@@ -27,6 +27,10 @@ body{
    display: flex;
  }
 
+ .d-none{
+   display: none;
+ }
+
 
 .container{
   height: 100vh;
@@ -46,7 +50,6 @@ body{
   position: relative;
   height: 100%;
   width: 200px;
-  padding: 0 10px;
   color: #797b80;
   background-color: #000;
   font-size: 12px;
@@ -57,6 +60,7 @@ body{
 .side_bar .logo{
   height: 80px;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .side_bar .logo img{
@@ -72,6 +76,11 @@ body{
 
 .aside_top_list li{
   padding-bottom: 10px;
+  padding-left: 10px;
+  border-left: 2px solid #000;
+}
+.aside_top_list li:first-child{
+  border-left: 2px solid #adff2f;
 }
 
 .aside_top_list_logo{
@@ -86,6 +95,7 @@ body{
 /* nav bottom */
 .nav_bottom{
   height: calc(100% - 280px);
+  padding-left: 10px;
 }
 
 .nav_bottom_info{
@@ -131,7 +141,7 @@ body{
 
 .info_account_top img{
   width: 20px;
-  height: auto;
+  height: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -143,8 +153,8 @@ body{
 }
 
 .info_account_bottom img{
-  width: 20px;
-  height: auto;
+  width: 25px;
+  height: 25px;
   vertical-align: middle;
   margin-right: 5px;
   background-color: #797b80;
@@ -163,7 +173,7 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: calc(100% - 200px);
+  width: calc(100% - 50px);
   height: 80px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -177,7 +187,7 @@ main{
 }
 
 .main_section{
-  width: calc(100% - 200px);
+  width: calc(100% - 50px);
   padding: 80px 20px 0 20px;
   overflow: auto;
   background-color: coral;
@@ -280,12 +290,43 @@ content: "g v";
 /* media screen */
 
 @media screen and (max-width: 767px){
+  .d-none-xs{
+    display: none;
+  }
 
+  .side_bar{
+    width: 50px;
+  }
 
+  .logo_small{
+    display: inline-block;
+    width: 30px;
+    margin: 10px;
+    border-left: 2px solid #000;
+  }
+
+  .info_account{
+    width: 50px;
+    margin: 0;
+  }
+
+  .aside_top_list li{
+    padding-right: 10px;
+  }
+
+  .info_account_top img, .info_account_bottom img{
+    margin-left: 12px;
+  }
 }
 
 @media screen and (min-width: 768px){
+  .main_section{
+    width: calc(100% - 200px);
+  }
 
+  .upgrade_bar{
+    width: calc(100% - 200px);
+  }
 }
 
 @media screen and (min-width: 992px){
