@@ -7,7 +7,9 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
-
+.container{
+  height: 100vh;
+}
  /* generali */
 
  a{
@@ -31,10 +33,10 @@ body{
    display: none;
  }
 
-
-.container{
-  height: 100vh;
+.p_top_40{
+  padding-top: 40px;
 }
+
 
 
 
@@ -190,13 +192,32 @@ main{
   width: calc(100% - 50px);
   padding: 80px 20px 0 20px;
   overflow: auto;
-  background-color: coral;
+  background-color: #141922;
 }
+
+/* main typography */
+
+
 
 .main_top_menu{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+/* sezioni musica */
+
+.sezione_musica_text{
+  margin-bottom: 30px;
+}
+
+.sezione_musica_text h2{
+  color: #fff;
+}
+
+.sezione_musica_text p {
+  font-size: 12px;
+  color: #797b80;
+  margin-top: 10px;
 }
 
 .list_songs{
@@ -240,6 +261,17 @@ main{
 .disc_info_wrapper:hover span::after{
   display: block;
 }
+
+.disc_info_wrapper h3{
+  font-size: 14px;
+  color: #fff;
+}
+.disc_info_wrapper h4{
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
 
 /* footer */
 
@@ -306,16 +338,11 @@ content: "g v";
   }
 
   .info_account{
-    width: 50px;
-    margin: 0;
+    text-align: center;
   }
 
   .aside_top_list li{
     padding-right: 10px;
-  }
-
-  .info_account_top img, .info_account_bottom img{
-    margin-left: 12px;
   }
 }
 
