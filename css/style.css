@@ -223,19 +223,26 @@ main{
 }
 
 .player__info__text{
-  width: 25%;
+  width: 40%;
+  padding-right: 20px;
 }
 
-.player__info_buttons .heart:after, .player__info_buttons .folder:after{
+/* .player__info_buttons{
+  padding-left: 30px;
+} */
+
+.player__info_buttons .heart:after{
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   font-size: 15px;
   margin-right: 10px;
-
 }
 .player__info_buttons .folder:after{
   content: "\f07b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .player__info_buttons .heart:hover, .player__info_buttons .folder:hover{
