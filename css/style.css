@@ -12,6 +12,11 @@ body{
 
  a{
    text-decoration: none;
+   color: #797b80;
+ }
+
+ a:hover{
+   color: #fff;
  }
 
  ul{
@@ -40,7 +45,7 @@ body{
 .side_bar{
   position: relative;
   height: 100%;
-  width: 250px;
+  width: 200px;
   padding: 0 10px;
   color: #797b80;
   background-color: #000;
@@ -52,7 +57,6 @@ body{
 .side_bar .logo{
   height: 80px;
   padding-top: 10px;
-  background-color: red;
 }
 
 .side_bar .logo img{
@@ -64,7 +68,6 @@ body{
 
 .nav_top{
   height: 130px;
-  background-color: pink;
 }
 
 .aside_top_list li{
@@ -87,7 +90,6 @@ body{
 
 .nav_bottom_info{
   height: 70px;
-  background-color: green;
 }
 .nav_bottom_info h3{
   color: #fff;
@@ -106,8 +108,11 @@ body{
 .aside_bottom_list{
   overflow-y: auto;
   height: calc(100% - 70px);
-  background-color: blue;
 }
+.aside_bottom_list li{
+  padding-bottom: 15px;
+}
+
 
 /* info account */
 
@@ -118,7 +123,32 @@ body{
   height: 70px;
   width: calc(100% - 20px);
   margin: 0 10px;
-  background-color: pink;
+}
+
+.info_account_top{
+  padding-bottom: 5px;
+}
+
+.info_account_top img{
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.info_account_bottom{
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info_account_bottom img{
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-color: #797b80;
+  border-radius: 50%;
 }
 
 /* sezione centrale */
@@ -133,7 +163,7 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   height: 80px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -147,7 +177,7 @@ main{
 }
 
 .main_section{
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   padding: 80px 20px 0 20px;
   overflow: auto;
   background-color: coral;
