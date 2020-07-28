@@ -6,6 +6,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .container{
   height: 100vh;
@@ -61,8 +62,6 @@ body{
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 12px;
-  font-weight: bold;
-
 }
 
 .upgrade_bar a{
@@ -98,7 +97,6 @@ main{
   flex-wrap: wrap;
   margin-top: 20px;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .main_top_menu li{
@@ -418,7 +416,6 @@ content: "g v";
   .info_account_bottom{
     padding-top: 10px;
     font-size: 14px;
-    font-weight: bold;
   }
 
   .info_account_bottom img{
