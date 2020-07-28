@@ -200,19 +200,51 @@ main{
 .player{
   display: flex;
   height: 80px;
+  color: #797b80;
+  background-color: #282828;
 }
+
+/* player infos */
 
 .player__info{
   display: flex;
   align-items: center;
   flex-grow: 1;
-  background-color: red;
 }
 
-.player__info:after{
-content: "g v";
+.player__info h5{
+  color: #fff;
 }
 
+.player__info img{
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.player__info__text{
+  width: 25%;
+}
+
+.player__info_buttons .heart:after, .player__info_buttons .folder:after{
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 10px;
+
+}
+.player__info_buttons .folder:after{
+  content: "\f07b";
+}
+
+.player__info_buttons .heart:hover, .player__info_buttons .folder:hover{
+  color: #fff;
+}
+
+
+
+/* player control */
 .player__control{
   flex-grow: 2;
   text-align: center;
@@ -227,17 +259,48 @@ content: "g v";
   background-color: green;
 }
 
+
+/* player sounds */
 .player__sound{
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
-  background-color: blue;
 }
 
-.player__sound::before{
-  content: "logos";
+.player__sound .list_logo::before, .player__sound .screen_logo::before, .player__sound .sound_logo::before{
+  content: "\f03a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+}
+.player__sound .screen_logo::before{
+  content: "\f108";
+}
+.player__sound .sound_logo::before{
+  content: "\f028";
+}
 
+.player__sound .volume_bar{
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  border: 2px solid #797b80;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.player__sound .volume_bar_used{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 40px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 
