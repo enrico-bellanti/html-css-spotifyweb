@@ -221,12 +221,13 @@ main{
 }
 
 .list_songs{
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 .list_songs li{
   width: calc((100% / 2) - 20px);
   text-align: center;
+  margin: 0 10px;
 }
 
 .disc_img_wrapper{
