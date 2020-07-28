@@ -37,131 +37,68 @@ body{
   padding-top: 40px;
 }
 
-
-
-
 /* colori */
 
 .t_grey{
   color: #797b80;
 }
 
+
 /* barra laterale */
-
-.side_bar{
-  position: relative;
+/* .side_bar_xs{
+  display: flex;
+  flex-direction: column;
+  width: 50px;
   height: 100%;
-  width: 200px;
-  color: #797b80;
   background-color: #000;
-  font-size: 12px;
-  overflow: hidden;
 }
 
-/* sezione LOGO */
-.side_bar .logo{
-  height: 80px;
+.logo{
   padding-top: 10px;
-  padding-left: 10px;
+  text-align: center;
 }
 
-.side_bar .logo img{
-  width: 150px;
-  height: auto;
+.logo a img{
+  width: 35px;
 }
 
-/* MENU SUPERIORE */
-
-.nav_top{
-  height: 130px;
+.nav_top_xs{
+  padding-top: 10px;
 }
 
-.aside_top_list li{
-  padding-bottom: 10px;
-  padding-left: 10px;
-  border-left: 2px solid #000;
+.nav_top_xs li{
+  text-align: center;
 }
-.aside_top_list li:first-child{
-  border-left: 2px solid #adff2f;
-}
-
-.aside_top_list_logo{
+.nav_top_xs a img{
   width: 30px;
-  vertical-align: middle;
-}
-.aside_top_list_logo img{
-  width: 100%;
+  margin-bottom: 10px;
 }
 
-
-/* nav bottom */
-.nav_bottom{
-  height: calc(100% - 280px);
-  padding-left: 10px;
+.side_bar_bottom{
+  margin-top: auto;
+  text-align: center;
 }
 
-.nav_bottom_info{
-  height: 70px;
-}
-.nav_bottom_info h3{
-  color: #fff;
+.side_bar_bottom li{
+  margin-bottom: 10px;
 }
 
-.nav_bottom_info .new_playlist::before{
-  content: "\f0fe";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  color: #797b80;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.aside_bottom_list{
-  overflow-y: auto;
-  height: calc(100% - 70px);
-}
-.aside_bottom_list li{
-  padding-bottom: 15px;
-}
-
-
-/* info account */
-
-.info_account{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 70px;
-  width: calc(100% - 20px);
-  margin: 0 10px;
-}
-
-.info_account_top{
-  padding-bottom: 5px;
-}
-
-.info_account_top img{
+.side_bar_bottom .download_app{
   width: 20px;
   height: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
 
-.info_account_bottom{
-  padding-top: 10px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.info_account_bottom img{
+.side_bar_bottom .img_profile{
   width: 25px;
   height: 25px;
   vertical-align: middle;
   margin-right: 5px;
   background-color: #797b80;
   border-radius: 50%;
-}
+} */
+
 
 /* sezione centrale */
 
@@ -323,31 +260,192 @@ content: "g v";
 /* media screen */
 
 @media screen and (max-width: 767px){
-  .d-none-xs{
+
+  .side_bar{
+    display: none;
+  }
+
+  .side_bar_xs{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+    background-color: #000;
+  }
+
+  .logo{
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .logo a img{
+    width: 35px;
+  }
+
+  .nav_top_xs{
+    padding-top: 10px;
+  }
+
+  .nav_top_xs li{
+    text-align: center;
+  }
+  .nav_top_xs a img{
+    width: 30px;
+    margin-bottom: 10px;
+  }
+
+  .side_bar_bottom{
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .side_bar_bottom li{
+    margin-bottom: 10px;
+  }
+
+  .side_bar_bottom .download_app{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .side_bar_bottom .img_profile{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #797b80;
+    border-radius: 50%;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+
+  /* barra laterale */
+  .side_bar_xs{
     display: none;
   }
 
   .side_bar{
-    width: 50px;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 200px;
+    color: #797b80;
+    background-color: #000;
+    font-size: 12px;
+    overflow: hidden;
   }
 
-  .logo_small{
-    display: inline-block;
-    width: 30px;
-    margin: 10px;
-    border-left: 2px solid #000;
+  /* sezione LOGO */
+  .side_bar .logo{
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
-  .info_account{
-    text-align: center;
+  .side_bar .logo img{
+    width: 150px;
+    height: auto;
+  }
+
+  /* MENU SUPERIORE */
+
+  .nav_top{
+    height: 130px;
   }
 
   .aside_top_list li{
-    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #000;
   }
-}
+  .aside_top_list li:first-child{
+    border-left: 2px solid #adff2f;
+  }
 
-@media screen and (min-width: 768px){
+  .aside_top_list_logo{
+    width: 30px;
+    vertical-align: middle;
+  }
+  .aside_top_list_logo img{
+    width: 100%;
+  }
+
+
+  /* nav bottom */
+  .nav_bottom{
+    height: calc(100% - 280px);
+    padding-left: 10px;
+  }
+
+  .nav_bottom_info{
+    height: 70px;
+  }
+  .nav_bottom_info h3{
+    color: #fff;
+  }
+
+  .nav_bottom_info .new_playlist::before{
+    content: "\f0fe";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: #797b80;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .aside_bottom_list{
+    overflow-y: auto;
+    height: calc(100% - 70px);
+  }
+  .aside_bottom_list li{
+    padding-bottom: 15px;
+  }
+
+
+  /* info account */
+
+  .info_account{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+
+  .info_account_top{
+    padding-bottom: 5px;
+  }
+
+  .info_account_top img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .info_account_bottom{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .info_account_bottom img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #797b80;
+    border-radius: 50%;
+  }
+
+
+  /* main */
   .main_section{
     width: calc(100% - 200px);
   }

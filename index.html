@@ -16,15 +16,52 @@
       <!-- inizio main -->
       <main>
 
-        <!-- barra laterale -->
+        <!-- barra laterale max_width 767px -->
+        <aside class="side_bar_xs">
+
+          <div class="side_bar_top">
+            <div class="logo">
+              <a href="#">
+                <img class="logo_small d-none" src="img/logo-small.svg" alt="Logo small">
+              </a>
+            </div>
+
+            <div class="nav_top_xs">
+              <ul>
+                <li>
+                  <a href="#"><img class="aside_top_list_logo" src="img/home.svg" alt="home"></a>
+                </li>
+                <li>
+                  <a href="#"><img class="aside_top_list_logo" src="img/search.svg" alt="search"></a>
+                </li>
+                <li>
+                  <a href="#"><img class="aside_top_list_logo" src="img/libreria.svg" alt="library"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side_bar_bottom">
+            <ul>
+              <li>
+                <a href="#"><img class="download_app" src="img/download.svg" alt="download"></a>
+              </li>
+              <li>
+                <a href="#"><img class="img_profile" src="img/profile.svg" alt="download"></a>
+              </li>
+            </ul>
+          </div>
+
+
+        </aside>
+        <!-- barra laterale max_width 767px -->
+
+        <!-- barra laterale min-width 768px -->
         <aside class="side_bar">
           <!-- logo -->
-          <div class="logo d-none-xs">
+          <div class="logo">
             <img src="img/logo.svg" alt="Logo">
           </div>
-          <a href="#">
-            <img class="logo_small d-none" src="img/logo-small.svg" alt="Logo small">
-          </a>
           <!-- logo -->
           <!-- menu superiore -->
           <nav class="nav_top">
@@ -33,25 +70,25 @@
                 <a href="#">
                   <img class="aside_top_list_logo" src="img/home.svg" alt="home">
                 </a>
-                <a href="#" class="d-none-xs">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
                 <a href="#">
-                  <img class="aside_top_list_logo" src="img/search.svg" alt="home">
+                  <img class="aside_top_list_logo" src="img/search.svg" alt="search">
                 </a>
-                <a href="#" class="d-none-xs">Cerca</a>
+                <a href="#">Cerca</a>
               </li>
               <li>
                 <a href="#">
-                  <img class="aside_top_list_logo" src="img/libreria.svg" alt="home">
+                  <img class="aside_top_list_logo" src="img/libreria.svg" alt="library">
                 </a>
-                <a href="#" class="d-none-xs">La tua libreria</a>
+                <a href="#">La tua libreria</a>
               </li>
             </ul>
           </nav>
             <!-- /menu superiore -->
             <!-- menu inferiore -->
-          <nav class="nav_bottom d-none-xs">
+          <nav class="nav_bottom">
 
             <div class="nav_bottom_info">
               <h3>PLAYLIST</h3>
@@ -76,22 +113,24 @@
               <a href="#">
                 <img src="img/download.svg" alt="download">
               </a>
-              <a class="d-none-xs" href="#">Installa App</a>
+              <a href="#">Installa App</a>
             </div>
 
-            <hr class="d-none-xs">
+            <hr>
 
             <div class="info_account_bottom">
               <a href="#">
                 <img src="img/profile.svg" alt="download">
               </a>
-              <a class="account d-none-xs" href="#">John Doe</a>
+              <a class="account" href="#">John Doe</a>
             </div>
 
           </div>
           <!-- info account   -->
         </aside>
         <!-- barra laterale -->
+
+
 
         <!-- barra upgrade -->
         <div class="upgrade_bar">
