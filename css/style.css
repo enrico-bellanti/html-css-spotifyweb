@@ -250,21 +250,21 @@ main{
 }
 
 .player__control__button{
-  height: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 .player__control__button li{
-  display: inline-block;
+  padding: 0 10px;
   text-align: center;
-  line-height: 40px;
 }
 .player__control__button li a i{
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
 }
 .player__control__button li .play_button{
-  width: 60px;
   font-size: 30px;
 }
 .player__control__button li .play_button:hover{
@@ -278,7 +278,7 @@ main{
  display: flex;
  justify-content: center;
  align-items: center;
- height: 40px;;
+ height: 30px;;
 }
 
 .player__control__bar .number{
