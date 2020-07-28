@@ -4,6 +4,9 @@
  padding: 0;
  }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
  /* generali */
 
@@ -25,44 +28,97 @@
 }
 
 
+
+/* colori */
+
+.t_grey{
+  color: #797b80;
+}
+
 /* barra laterale */
 
 .side_bar{
   position: relative;
   height: 100%;
   width: 250px;
-  padding: 10px 10px 0 10px;
-  background-color: pink;
-}
-.nav_bar{
+  padding: 0 10px;
+  color: #797b80;
+  background-color: #000;
+  font-size: 12px;
   overflow: hidden;
-  height: calc(100% - 70px);
 }
+
+/* sezione LOGO */
+.side_bar .logo{
+  height: 80px;
+  padding-top: 10px;
+  background-color: red;
+}
+
+.side_bar .logo img{
+  width: 150px;
+  height: auto;
+}
+
+/* MENU SUPERIORE */
 
 .nav_top{
-  height: 80px;
+  height: 130px;
+  background-color: pink;
 }
 
+.aside_top_list li{
+  padding-bottom: 10px;
+}
+
+.aside_top_list_logo{
+  width: 30px;
+  vertical-align: middle;
+}
+.aside_top_list_logo img{
+  width: 100%;
+}
+
+
+/* nav bottom */
 .nav_bottom{
-  height: calc(100% - 80px);
+  height: calc(100% - 280px);
 }
 
-.nav_bottom_text{
-  height: 50px;
+.nav_bottom_info{
+  height: 70px;
+  background-color: green;
+}
+.nav_bottom_info h3{
+  color: #fff;
 }
 
-.aside_list_playlist{
+.nav_bottom_info .new_playlist::before{
+  content: "\f0fe";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #797b80;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.aside_bottom_list{
   overflow-y: auto;
-  height: calc(100% - 50px);
+  height: calc(100% - 70px);
+  background-color: blue;
 }
 
-.aside_bottom{
+/* info account */
+
+.info_account{
   position: absolute;
   left: 0;
   bottom: 0;
   height: 70px;
   width: calc(100% - 20px);
   margin: 0 10px;
+  background-color: pink;
 }
 
 /* sezione centrale */
