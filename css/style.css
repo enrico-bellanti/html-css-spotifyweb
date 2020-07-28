@@ -271,6 +271,14 @@ main{
   font-size: 34px;
 }
 
+.player__control__button_li_play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
+
 
 
 /* ----- */
