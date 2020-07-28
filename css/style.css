@@ -89,15 +89,33 @@ main{
   background-color: #141922;
 }
 
-/* main typography */
 
-
+/* menu sezione centrale */
 
 .main_top_menu{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
 }
+
+.main_top_menu li{
+  margin: 0 10px;
+}
+.main_top_menu li:first-child::after{
+  content: "";
+  display: block;
+  width: 30px;
+  margin: auto;
+  border: 1px solid #adff2f;
+  background-color: #adff2f;
+}
+
+
+
+
 /* sezioni musica */
 
 .sezione_musica_text{
@@ -115,7 +133,6 @@ main{
 }
 
 .list_songs{
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 .list_songs li{
