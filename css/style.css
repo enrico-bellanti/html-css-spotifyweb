@@ -66,13 +66,16 @@ body{
 }
 
 .upgrade_bar a{
-  width: 218px;
   text-align: center;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 110px;
-  padding: 15px 25px;
+  padding: 10px 15px;
   transition: 0.5s
+}
+
+.upgrade_bar a h3{
+  width: 170px;
 }
 
 .upgrade_bar a:hover h3:first-child{
@@ -84,6 +87,7 @@ body{
 }
 .upgrade_bar a:hover{
   background-color: #1ed760;
+  transform: scale(1.2);
 }
 
 .upgrade_bar a:hover h3:last-child{
