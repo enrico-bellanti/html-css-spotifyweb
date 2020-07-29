@@ -16,6 +16,7 @@ body{
  a{
    text-decoration: none;
    color: #797b80;
+   transition: 0.5s
  }
 
  a:hover{
@@ -65,14 +66,32 @@ body{
 }
 
 .upgrade_bar a{
+  width: 218px;
+  text-align: center;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 110px;
   padding: 15px 25px;
+  transition: 0.5s
+}
+
+.upgrade_bar a:hover h3:first-child{
+  display: none;
+}
+
+.upgrade_bar a h3:last-child{
+  display: none;
 }
 .upgrade_bar a:hover{
-  padding: 17px 27px;
+  background-color: #1ed760;
 }
+
+.upgrade_bar a:hover h3:last-child{
+  display: block;
+}
+
+
+
 
 /* MAIN */
 
@@ -193,7 +212,7 @@ main{
 
 /* sezione most wanted */
 
-#artist_most_wanted .disc_info_wrapper img{
+.artists .disc_info_wrapper img{
   border-radius: 50%;
 }
 
