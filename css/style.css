@@ -186,16 +186,20 @@ main{
 }
 
 .disc_img_wrapper .layout_disc span::after{
-  display: none;
   content: "\f144";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   font-size: 70px;
-  color: #fff;
+  /* color: #fff; */
 }
 
-.disc_info_wrapper:hover span::after{
-  display: block;
+.disc_img_wrapper .layout_disc span{
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s
+}
+
+.disc_info_wrapper:hover span{
+  color: rgba(255, 255, 255, 1);
 }
 
 .disc_info_wrapper h3{
