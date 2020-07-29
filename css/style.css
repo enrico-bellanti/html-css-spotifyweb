@@ -139,6 +139,10 @@ main{
   margin: 0 10px;
 }
 
+.list_songs li:nth-child(1n+3){
+  display: none;
+}
+
 .disc_img_wrapper{
   position: relative;
 }
@@ -597,12 +601,20 @@ main{
     width: calc((100% / 4) - 20px);
     text-align: center;
   }
+
+  .list_songs li:nth-child(1n+5){
+    display: inline-block;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
   .list_songs li{
     width: calc((100% / 6) - 20px);
     text-align: center;
+  }
+  .list_songs li:nth-child(1n+3){
+    display: inline-block;
   }
 
 }
