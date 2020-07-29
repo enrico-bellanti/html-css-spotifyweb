@@ -194,7 +194,6 @@ main{
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   font-size: 70px;
-  /* color: #fff; */
 }
 
 .disc_img_wrapper .layout_disc span{
@@ -304,6 +303,7 @@ main{
 }
 .player__control__button li .play_button{
   font-size: 30px;
+  transition: 0.1s
 }
 .player__control__button li .play_button:hover{
   font-size: 34px;
