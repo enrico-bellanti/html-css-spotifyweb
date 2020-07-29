@@ -490,9 +490,9 @@ main{
 
   /* MENU SUPERIORE */
 
-  /* .nav_top{
+  .nav_top{
     height: 130px;
-  } */
+  }
 
   .aside_top_list li{
     padding-bottom: 10px;
