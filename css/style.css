@@ -87,7 +87,7 @@ body{
 }
 .upgrade_bar a:hover{
   background-color: #1ed760;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .upgrade_bar a:hover h3:last-child{
