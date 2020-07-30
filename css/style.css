@@ -356,8 +356,9 @@ main{
   width: 12px;
   height: 12px;
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   transition: 0.5s;
@@ -418,8 +419,9 @@ main{
   width: 12px;
   height: 12px;
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
   transition: 0.5s;
@@ -648,6 +650,13 @@ main{
   }
   .list_songs li:nth-child(1n+3){
     display: inline-block;
+  }
+
+}
+
+@media screen and (max-height: 300px){
+  .upgrade_bar, .info_account{
+    display: none;
   }
 
 }
