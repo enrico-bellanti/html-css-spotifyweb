@@ -348,7 +348,7 @@ main{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   transition: background 0.5s;
-  transition: width 2s;
+  transition: width 1.2s linear;
 }
 .player__control .music_bar_inside:hover{
   background-color: rgba(173, 255, 47, 1);
@@ -415,7 +415,7 @@ main{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   transition: background 0.5s;
-  transition: width 2s;
+  transition: width 1s linear;
 }
 .player__sound .volume_bar_inside:hover{
   background: rgba(173, 255, 47, 1);
