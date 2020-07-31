@@ -378,6 +378,7 @@ main{
 .player__sound{
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
   flex-grow: 1;
 }
@@ -442,6 +443,12 @@ main{
 
 
 /* media screen */
+
+@media screen and (max-width: 592px){
+  .player__sound{
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 767px){
 
