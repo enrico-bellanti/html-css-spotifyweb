@@ -283,7 +283,7 @@ main{
 
 
 
-/* player control */
+/* player controlli MUSICA */
 .player__control{
   flex-grow: 2;
 }
@@ -292,7 +292,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 47px;
 }
 
 .player__control__button li{
@@ -321,12 +321,12 @@ main{
 
 
 
-/* ----- */
+/* barra scorrimento musica */
 .player__control__bar{
  display: flex;
  justify-content: center;
  align-items: center;
- height: 30px;;
+ height: 33px;;
 }
 
 .player__control__bar .number{
@@ -674,5 +674,10 @@ main{
   .upgrade_bar, .info_account{
     display: none;
   }
+
+  .main_section{
+    padding: 0 20px 0 20px;
+  }
+
 
 }
