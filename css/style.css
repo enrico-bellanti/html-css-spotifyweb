@@ -228,7 +228,9 @@ main{
 /* footer */
 
 .player{
+  position: relative;
   display: flex;
+  z-index: 2;
   height: 80px;
   color: #797b80;
   background-color: #282828;
@@ -306,7 +308,7 @@ main{
   transition: 0.1s
 }
 .player__control__button li .play_button:hover{
-  font-size: 34px;
+  transform: scale(1.2);
 }
 
 .player__control__button_li_play{
